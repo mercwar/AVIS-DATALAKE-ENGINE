@@ -49,22 +49,15 @@ function switchPortal(portalId, clickedTab) {
  * Evaluates live query vectors against complete underlying text nodes
  */
 function filterMatrixEngine() {
-    // 1. Isolate user search criteria strings and clean casing parameters
     const filterInput = document.getElementById('engineFilter');
     if (!filterInput) return;
     
     const query = filterInput.value.toLowerCase().trim();
-    
-    // 2. Target table matrix data records across visible blocks
     const tables = document.querySelectorAll('.repo-table');
     let totalVisibleNodes = 0;
 
-    // 3. Process structural scanning loops to evaluate text matching
     tables.forEach(table => {
-        // Collect string vectors inside table wrappers (headers, cells, badges)
         const innerTextMatrix = table.textContent.toLowerCase();
-
-        // 4. Execute string matching loops to toggle operational layouts
         if (innerTextMatrix.includes(query)) {
             table.style.display = '';
             totalVisibleNodes++;
@@ -73,22 +66,31 @@ function filterMatrixEngine() {
         }
     });
 
-    // 5. Dynamic validation check: Toggle system error banner if dataset matches drop to zero
     const errorNotificationBar = document.getElementById('noResultsBlock');
     if (errorNotificationBar) {
-        if (totalVisibleNodes === 0) {
-            errorNotificationBar.style.display = 'block';
-        } else {
-            errorNotificationBar.style.display = 'none';
-        }
+        errorNotificationBar.style.display = totalVisibleNodes === 0 ? 'block' : 'none';
     }
 }
 
 /**
- * Optional Event Listener Hook: Registers automated listeners 
- * once the document complete DOM lifecycle completes loading.
+ * Navigation Controls: Back, Forward, Home, CVBGod
+ */
+function initNavigation() {
+    const backBtn = document.getElementById("nav-back");
+    const forwardBtn = document.getElementById("nav-forward");
+    const homeBtn = document.getElementById("nav-home");
+    const cvbgodBtn = document.getElementById("nav-cvbgod");
+
+    if (backBtn) backBtn.addEventListener("click", () => window.history.back());
+    if (forwardBtn) forwardBtn.addEventListener("click", () => window.history.forward());
+    if (homeBtn) homeBtn.addEventListener("click", () => window.location.href = "index.html");
+    if (cvbgodBtn) cvbgodBtn.addEventListener("click", () => window.location.href = "https://cvbgod.github.io");
+}
+
+/**
+ * DOM Ready Hook
  */
 document.addEventListener('DOMContentLoaded', () => {
-    // Verify directory tracking status
     console.log("📡 AVIS DATALAKE NAVIGATION HUB: Online and indexing loops active.");
+    initNavigation();
 });
