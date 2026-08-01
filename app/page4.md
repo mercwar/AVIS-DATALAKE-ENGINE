@@ -1,6 +1,4 @@
-Here’s the **next massive README tutorial page (Page 4)** for the AVIS Datalake Engine, styled for GitHub and continuing seamlessly from the earlier pages. This one focuses on **payload schemas, diagnostics, and advanced search controls**.
 
----
 
 # 📘 AVIS Datalake Engine — README Tutorial Page 4
 
@@ -93,9 +91,3 @@ The AVIS Datalake Engine surfaces backend assets through two distinct user inter
 - Skip empty folders to avoid “No records found.”  
 - Use `DIRECTORY_SEPARATOR` for cross‑platform safety.  
 - Preserve filter state across pagination using `http_build_query($queryParams)`.
-
----
-
-This Page 4 README gives developers a **deep dive into payload schemas, diagnostics, and advanced search controls**. It ensures that the datalake engine runs reliably, filters correctly, and validates its environment before production deployment.  
-
-Would you like me to finish with **Page 5: Contributing & License** so the set becomes a complete GitHub‑ready documentation series?
