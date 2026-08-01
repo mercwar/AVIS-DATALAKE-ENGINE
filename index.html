@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVIS Matrix Gateway Dropdown</title>
+    <style>
+        :root {
+            --bg-deep-space: #020408;
+            --bg-matrix-grid: #050a12;
+            --accent-orange-glow: #ff5100;
+            --accent-blue-neon: #00bfff;
+            --text-primary-bright: #ffffff;
+            --border-steel: #1b2e4c;
+            --cyber-glow: 0 0 15px rgba(255, 81, 0, 0.4);
+        }
+
+        body {
+            background-color: var(--bg-deep-space);
+            background-image: 
+                radial-gradient(circle at 50% 50%, rgba(10, 25, 50, 0.3) 0%, transparent 80%),
+                linear-gradient(rgba(18, 30, 49, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(18, 30, 49, 0.05) 1px, transparent 1px);
+            background-size: 100% 100%, 20px 20px, 20px 20px;
+            font-family: 'Segoe UI', -apple-system, sans-serif;
+            color: var(--text-primary-bright);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .gateway-container {
+            background: var(--bg-matrix-grid);
+            border: 2px solid var(--border-steel);
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.75);
+            text-align: center;
+            width: 100%;
+            max-width: 450px;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            margin-bottom: 20px;
+            color: var(--accent-blue-neon);
+            text-shadow: 0 0 8px rgba(0, 191, 255, 0.3);
+        }
+
+        .cyber-select {
+            width: 100%;
+            background-color: var(--bg-deep-space);
+            border: 1px solid var(--accent-orange-glow);
+            color: var(--text-primary-bright);
+            padding: 12px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            border-radius: 4px;
+            cursor: pointer;
+            box-shadow: var(--cyber-glow);
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .cyber-select:focus {
+            border-color: var(--accent-blue-neon);
+        }
+
+        .cyber-select option {
+            background-color: var(--bg-matrix-grid);
+            color: var(--text-primary-bright);
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="gateway-container">
+    <h2>📡 AVIS CORE MATRIX NETWORK ROUTER</h2>
+    
+    <!-- Inline Redirect Dropdown Trigger -->
+    <select class="cyber-select" onchange="if(this.value) window.open(this.value, '_blank'); this.value='';">
+        <option value="" selected disabled>SELECT TARGET UPLINK LINK...</option>
+        
+        <!-- GitHub Infrastructure Group -->
+        <optgroup label="🚀 GITHUB REPOSITORIES (://github.com)">
+            <option value="https://github.com">AVIS-DATALAKE (Manifest Framework)</option>
+            <option value="https://://github.com/AVIS-NEWS/">AVIS-NEWS (Search Aggregator Dashboard)</option>
+            <option value="https://://github.com/NAVIGATOR-LLM-ACADEMY">NAVIGATOR-LLM-ACADEMY (Master Manuals)</option>
+            <option value="https://github.com">CYHY-CMT Toolchain (Meta-Compiler Engine)</option>
+            <option value="https://://github.com/GGML-LLAMA-MSVC-INSTALLER">GGML-LLAMA-MSVC-INSTALLER (GGUF Toolkit)</option>
+            <option value="https://github.com">AVIS-AI-INI-DIR-MK-SCAN (Batch Setup)</option>
+            <option value="https://://github.com/CVBGODLY-CONSOLE/blob/main/Dark-Com.html">CVBGODLY-CONSOLE (Dark-Com Interface File)</option>
+            <option value="https://github.com">Robo-Knight-Player (Graphics Engine Node)</option>
+            <option value="https://github.com">Robo-Knight-Inventory (Asset Storage Registry)</option>
+            <option value="https://github.com">Sentinel Compliance (Internal Network Tracker)</option>
+        </optgroup>
+        
+        <!-- Live Web Nodes Group -->
+        <optgroup label="🌐 PRODUCTION ENDPOINTS (://byethost3.com)">
+            <option value="https://://byethost3.com/">MERCWAR AI Portal Base (Main Gate Node)</option>
+            <option value="https://://byethost3.com/RRU/index.php">Intelligent Network Workspace (Main Control Hub)</option>
+            <option value="https://://byethost3.com/RRU-AI/BLOG/browse_form.php">Dynamic Blog Browser (Module File System View)</option>
+            <option value="http://://byethost3.com/AVIS-DATALAKE/">AVIS Datalake Main Engine (File Directory Map)</option>
+            <option value="http://://byethost3.com/AVIS-DATALAKE/private_browser.php">Private Storage Browser (Protected Node Filters)</option>
+            <option value="http://://byethost3.com/AVIS-DATALAKE/public_browser.php">Public Datalake Browser Hub (Global Listing Grid)</option>
+            <option value="http://://byethost3.com/AVIS-NEWS/">Avis News Aggregator Portal (Streaming Telemetry)</option>
+        </optgroup>
+    </select>
+</div>
+
+</body>
+</html>
