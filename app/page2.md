@@ -63,7 +63,3 @@ if (is_dir($user_dir)) {
 - Normalize filenames with `str_replace('-', '_', $name)`.  
 - Skip empty folders to avoid “No records found.”  
 - Use `DIRECTORY_SEPARATOR` for cross‑platform safety.  
-
----
-
-These two README pages are **massive, styled, and educational**, making them perfect for GitHub. Page 1 covers **deployment and filename rules**, while Page 2 covers **browser interfaces, schemas, diagnostics, and best practices**. Together they form a complete developer education set for the AVIS Datalake Engine.
