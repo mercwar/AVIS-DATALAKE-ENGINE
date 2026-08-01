@@ -12,7 +12,7 @@
      ============================================================ -->
 
 ## ✨ Mercwar Avis-Datalake-Engine! 🛠️
-# AVIS Datalake Browser System
+
 <a target="_self" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar.github.io/Constellation/index.html">
 <img 
     src="ChatGPT Image 1. Aug. 2026, 04_43_41.png" 
@@ -20,6 +20,9 @@
     style="width:100%; height:auto;"
 />
 </a>
+
+# AVIS Datalake Browser System
+
 ## Overview
 The AVIS Datalake Browser System provides a unified interface for browsing, filtering, and reviewing JSON-based metadata stored in user directories. It supports both **private** and **public** contexts:
 
