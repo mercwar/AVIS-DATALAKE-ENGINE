@@ -1,4 +1,8 @@
-
+  <a href="../page1.md" style="margin:0 10px; text-decoration:none;">⬅️ Back to app</a>
+ <a href="../README.md" style="margin:0 10px; text-decoration:none;">🏠 Home</a>
+  <a href="p1.md" style="margin:0 10px; text-decoration:none;">➡️ Back to start</a>
+    <a href="readme.md" style="margin:0 10px; text-decoration:none;">⚡ CVBGod</a>
+    
 
 # 📘 AVIS Datalake Engine — Understanding the Summary
 
