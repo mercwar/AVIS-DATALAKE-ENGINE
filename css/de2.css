@@ -1,0 +1,160 @@
+/* ==========================================================================
+   🔥❄️ MercWar Public Index — Fire & Ice Neon Framework
+   Full Styling for Navigation, Tables, Filters, Error Banners, and Scrollbars
+   ========================================================================== */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #0d0d0d;
+  color: #e6e6e6;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.navbar button {
+  background: linear-gradient(90deg, #00ccff, #0066ff);
+  color: #0d0d0d;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.navbar button:hover {
+  background: linear-gradient(90deg, #ff0066, #ffcc00);
+  color: #0d0d0d;
+  box-shadow: 0 0 20px #ffcc00;
+}
+
+/* Tabs */
+.nav-tab {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 1px solid #00ccff;
+  border-radius: 4px;
+  color: #00ccff;
+  background: #1a1a1a;
+  transition: all 0.3s ease;
+}
+
+.nav-tab:hover {
+  background: #00ccff;
+  color: #0d0d0d;
+}
+
+.active-tab {
+  background: linear-gradient(90deg, #00ccff, #0066ff);
+  color: #0d0d0d;
+  box-shadow: 0 0 25px #00ccff;
+}
+
+/* Sections */
+.matrix-section {
+  display: none;
+}
+
+.active-section {
+  display: block;
+}
+
+/* Search Input */
+#engineFilter {
+  width: 100%;
+  padding: 12px;
+  margin: 20px 0;
+  border: 2px solid #00ccff;
+  border-radius: 6px;
+  background: #1a1a1a;
+  color: #e6e6e6;
+  font-size: 1rem;
+}
+
+#engineFilter:focus {
+  outline: none;
+  box-shadow: 0 0 20px #00ccff;
+}
+
+/* Tables */
+.repo-table {
+  border-collapse: collapse;
+  margin: 20px 0;
+  width: 100%;
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+}
+
+.repo-table th {
+  background: linear-gradient(90deg, #00ccff, #0066ff);
+  color: #0d0d0d;
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.repo-table td {
+  border: 1px solid #333;
+  padding: 10px;
+  color: #e6e6e6;
+}
+
+.repo-table a {
+  color: #00ccff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.repo-table a:hover {
+  text-decoration: underline;
+  color: #ffcc00;
+}
+
+/* Error Banner */
+#noResultsBlock {
+  display: none;
+  background: #660000;
+  color: #fff;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 0 20px #ff0000;
+}
+
+/* Scrollbars — Fire & Ice aesthetic */
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00ccff, #ff0066);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ffcc00, #ff0066);
+}
