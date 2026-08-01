@@ -3,7 +3,7 @@
   <!-- Navigation Buttons -->
 
 <a href="https://cvbgod.github.io" style="margin:0 10px; text-decoration:none;">⚡ CVBGod</a>
-  <a href="page2.md" style="margin:0 10px; text-decoration:none;">➡️ Forward</a>
+  <a href="page1.md" style="margin:0 10px; text-decoration:none;">➡️ Forward</a>
   <a href="../README.md" style="margin:0 10px; text-decoration:none;">🏠 Home</a>
   
 </div>
