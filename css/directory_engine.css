@@ -1,18 +1,25 @@
 /* ==========================================================================
    🌌 CYBORG LIVE AVIS DATALAKE GATEWAY CSS
-   Neon Aesthetic Styling for Tables, Navigation, and Filters
+   Neon Core Styling for Navigation, Tables, Filters, and State Loops
    ========================================================================== */
 
-/* General page styling */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   background-color: #0d0d0d;
   color: #e6e6e6;
-  margin: 0;
   padding: 20px;
+  line-height: 1.6;
 }
 
-/* Navigation bar */
+/* Navigation Bar */
 .navbar {
   display: flex;
   justify-content: center;
@@ -24,16 +31,16 @@ body {
   background: #1a1a1a;
   color: #00ccff;
   border: 1px solid #00ccff;
-  padding: 10px 20px;
+  padding: 12px 24px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 6px;
   transition: all 0.3s ease;
 }
 
 .navbar button:hover {
   background: #00ccff;
   color: #0d0d0d;
-  box-shadow: 0 0 10px #00ccff;
+  box-shadow: 0 0 15px #00ccff;
 }
 
 /* Tabs */
@@ -57,7 +64,7 @@ body {
 .active-tab {
   background: #00ccff;
   color: #0d0d0d;
-  box-shadow: 0 0 15px #00ccff;
+  box-shadow: 0 0 20px #00ccff;
 }
 
 /* Sections */
@@ -69,20 +76,20 @@ body {
   display: block;
 }
 
-/* Search input */
+/* Search Input */
 #engineFilter {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   margin: 20px 0;
-  border: 1px solid #00ccff;
-  border-radius: 5px;
+  border: 2px solid #00ccff;
+  border-radius: 6px;
   background: #1a1a1a;
   color: #e6e6e6;
 }
 
 #engineFilter:focus {
   outline: none;
-  box-shadow: 0 0 10px #00ccff;
+  box-shadow: 0 0 15px #00ccff;
 }
 
 /* Tables */
@@ -91,18 +98,19 @@ body {
   margin: 20px 0;
   width: 100%;
   background-color: #1a1a1a;
+  border: 1px solid #333;
 }
 
 .repo-table th {
   background-color: #00ccff;
   color: #0d0d0d;
-  padding: 10px;
+  padding: 12px;
   text-align: left;
 }
 
 .repo-table td {
   border: 1px solid #333;
-  padding: 8px;
+  padding: 10px;
   color: #e6e6e6;
 }
 
@@ -113,17 +121,18 @@ body {
 
 .repo-table a:hover {
   text-decoration: underline;
+  color: #ffcc00;
 }
 
-/* Error notification */
+/* Error Banner */
 #noResultsBlock {
   display: none;
   background: #660000;
   color: #fff;
   padding: 15px;
   margin: 20px 0;
-  border-radius: 5px;
+  border-radius: 6px;
   text-align: center;
   font-weight: bold;
-  box-shadow: 0 0 10px #ff0000;
+  box-shadow: 0 0 15px #ff0000;
 }
