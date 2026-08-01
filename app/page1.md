@@ -1,4 +1,9 @@
 
+  <a href="readme.md" style="margin:0 10px; text-decoration:none;">⚡ CVBGod</a>
+ <a href="../README.md" style="margin:0 10px; text-decoration:none;">🏠 Home</a>
+  <a href="page2.md" style="margin:0 10px; text-decoration:none;">➡️ Forward</a>
+  
+ 
 
 # 📘 AVIS Datalake Engine — README Tutorial Page 1
 
