@@ -1,6 +1,4 @@
-Here’s the **final massive README tutorial page (Page 5)** for the AVIS Datalake Engine — styled for GitHub, educational, and completing the full documentation set. This page focuses on **Contributing, Licensing, and Community Practices** so the project is fully open‑source ready.
 
----
 
 # 📘 AVIS Datalake Engine — README Tutorial Page 5
 
@@ -61,9 +59,3 @@ Future enhancements include:
 - [ ] Verify directory traversal with `diagnostic_uplink.php`.  
 - [ ] Test private and public browsers with sample JSON payloads.  
 - [ ] Document new features in README before merging.  
-
----
-
-This Page 5 README completes the **five‑part GitHub tutorial series** for the AVIS Datalake Engine. Together, the pages cover **Introduction, Architecture, Deployment, Browser Interfaces, Payload Schemas, Diagnostics, Contributing, and Licensing** — making the project fully documented, collaborative, and open‑source ready.  
-
-Would you like me to also draft a **visual quick‑start diagram** (architecture flowchart) so new developers can grasp the datalake engine setup in under a minute?
