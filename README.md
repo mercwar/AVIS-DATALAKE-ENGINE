@@ -148,27 +148,8 @@ This protocol ensures filters and dropdowns work consistently across private and
 - 📊 Integrate visualization of metadata trends.  
 - 🗂️ Support batch review of multiple files per user.  
 - 🔐 Extend private browser with role-based access controls.
-<a target="_self" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar.github.io/Constellation/index.html">
-<img 
-    src="https://raw.githubusercontent.com/mercwar/Robo-Knight-Gallery/refs/heads/main/Version%207/image_d2a07390.png" 
-    alt="Mercwar Constellation" 
-    style="width:100%; height:auto;"
-/>
-</a>
-<!-- ============================================================
-     AVIS-ARTIFACT
-     PROJECT: MERCWAR AVIS DROP
-     VERSION: RRU LIVE v9
-     ============================================================ -->
 
-## ✨ Mercwar Avis Drop — Coming Soon! 🛠️
-<a target="_self" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar.github.io/Constellation/index.html">
-<img 
-    src="https://raw.githubusercontent.com/mercwar/Robo-Knight-Gallery/refs/heads/main/Version%207/image_d2a07390.png" 
-    alt="Mercwar Constellation" 
-    style="width:100%; height:auto;"
-/>
-</a>
+
 # 🚀 AVIS Datalake Engine
 
 The AVIS Datalake Engine is an open, high‑performance multi-tenant filesystem indexing framework designed to instantly bridge localized storage repositories with complex browser visualization portals. By leveraging native pattern recognition routing, the engine provides lightning-fast decentralized file mapping without the overhead of heavy relational database clusters.
@@ -417,10 +398,3 @@ Client 🌐 → Ingress Router 🔌 → Tenant Switch 🔀 → AVIS Engine ⚙�
 
 
 
-
-
----
-
-This **graphical README** transforms the entire 15‑page tutorial set into a **visual navigation hub**. Each section is illustrated with diagrams, dashboards, and icons, making it easy for developers and public users to grasp the AVIS Datalake Engine’s architecture at a glance.  
-
-Would you like me to now build a **single consolidated infographic (one giant diagram)** that visually maps all 15 pages together into one flow?
