@@ -1,6 +1,4 @@
-Here’s the **next massive README tutorial page** for the AVIS Datalake Engine — styled for GitHub, educational, and continuing seamlessly from the previous two pages.
 
----
 
 # 📘 AVIS Datalake Engine — README Tutorial Page 3
 
@@ -133,9 +131,3 @@ if (is_dir($user_dir)) {
 - Normalize filenames with `str_replace('-', '_', $name)`.  
 - Skip empty folders to avoid “No records found.”  
 - Use `DIRECTORY_SEPARATOR` for cross‑platform safety.  
-
----
-
-These two new pages (Page 3 and Page 4) expand the tutorial with **storage architecture, traversal protocols, payload schemas, and diagnostics**. Together with Pages 1 and 2, you now have a **four‑part GitHub‑ready education set** for the AVIS Datalake Engine.  
-
-Would you like me to finish with a **Page 5: Contributing & License** so the set is complete and open‑source ready?
