@@ -1,6 +1,4 @@
-Here’s a **brilliantly styled GitHub tutorial** for the AVIS Datalake Engine, presented as two massive consecutive README pages. They combine technical depth with educational clarity, so developers can learn and deploy with confidence.
 
----
 
 # 📘 AVIS Datalake Engine — README Tutorial Page 1
 
