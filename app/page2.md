@@ -1,4 +1,8 @@
-
+  <a href="page1.md" style="margin:0 10px; text-decoration:none;">⬅️ Back</a>
+ <a href="../README.md" style="margin:0 10px; text-decoration:none;">🏠 Home</a>
+  <a href="page3.md" style="margin:0 10px; text-decoration:none;">➡️ Forward</a>
+    <a href="readme.md" style="margin:0 10px; text-decoration:none;">⚡ CVBGod</a>
+    
 # 📘 AVIS Datalake Engine — README Tutorial Page 2
 
 ## 🌐 Browser Interfaces
