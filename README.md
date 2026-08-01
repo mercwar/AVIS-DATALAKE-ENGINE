@@ -18,25 +18,31 @@
 
 # 🌌 AVIS Datalake Engine — Graphical README
 
-## 📑 Table of Contents
-- 🔧 Developer/Internal Tutorials  
-  1. Core Rules & Deployment  
-  2. Browser Interfaces  
-  3. Storage Architecture  
-  4. Payload Schemas & Diagnostics  
-  5. Contributing & License  
+# 🌌 AVIS Datalake Engine — README TOC
 
-- 🌐 Public Tutorials  
-  6. Routers, Switches & Engines  
-  7. Browser Navigation  
-  8. Payload Review Forms  
-  9. Diagnostics & Verification  
-  10. Community Practices  
-  11. Visualization & Monitoring  
-  12. Security & Access Control  
-  13. Advanced Configurations  
-  14. Performance & Scalability  
-  15. Final Integration & Roadmap  
+## 📑 Table of Contents
+
+### 🔧 Developer/Internal Tutorials
+1. [Core Rules & Deployment](app/page1.md)  
+2. [Browser Interfaces](app/page2.md)  
+3. [Storage Architecture](app/page3.md)  
+4. [Payload Schemas & Diagnostics](app/page4.md)  
+5. [Contributing & License](app/page5.md)  
+
+---
+
+### 🌐 Public Tutorials
+6. [Routers, Switches & Engines](app/dl/p1.md)  
+7. [Browser Navigation](app/dl/p2.md)  
+8. [Payload Review Forms](app/dl/p3.md)  
+9. [Diagnostics & Verification](app/dl/p4.md)  
+10. [Community Practices](app/dl/p5.md)  
+11. [Visualization & Monitoring](app/dl/p6.md)  
+12. [Security & Access Control](app/dl/p7.md)  
+13. [Advanced Configurations](app/dl/p8.md)  
+14. [Performance & Scalability](app/dl/p9.md)  
+15. [Final Integration & Roadmap](app/dl/p10.md)  
+
 
 <a target="_self" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar.github.io/Constellation/index.html">
 <img 
