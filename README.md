@@ -1,3 +1,22 @@
+<!-- AVIS Standard Header -->
+<div align="center" style="margin:20px 0;">
+  <!-- Navigation Buttons -->
+
+<a href="https://cvbgod.github.io" style="margin:0 10px; text-decoration:none;">⚡ CVBGod</a>
+  <a href="page2.md" style="margin:0 10px; text-decoration:none;">➡️ Forward</a>
+  <a href="../README.md" style="margin:0 10px; text-decoration:none;">🏠 Home</a>
+  
+</div>
+
+<!-- Gateway Image Link -->
+<a target="_self" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar.github.io/Constellation/index.html">
+  <img 
+    src="ChatGPT Image 1. Aug. 2026, 04_43_41.png" 
+    alt="Mercwar Constellation" 
+    style="width:100%; height:auto;"
+  />
+</a>
+
 
 ---
 <a target="_self" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar.github.io/Constellation/index.html">
