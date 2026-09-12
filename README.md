@@ -35,9 +35,7 @@
 ## ✨ Mercwar Avis-Datalake-Engine! 🛠️
 
 
-# 🌌 AVIS Datalake Engine — Graphical README
-
-# 🌌 AVIS Datalake Engine — README TOC
+# 🌌 ...And now, The Official AVIS Datalake Engine Reade me
 
 ## 📑 Table of Contents
 
