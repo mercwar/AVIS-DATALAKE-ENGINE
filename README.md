@@ -231,61 +231,7 @@ The query filtering matrix converts flat filesystem listings into searchable col
 If your file names use mixed formatting (such as dashes), the engine standardizes characters using `str_replace('-', '_', $name)` prior to executing search filters.
 # 🛠️ Server-Side System Deployment Guide
 
-Follow this systematic deployment map to initialize your multi-tenant environment engine.
 
-## Step 1: Deploy Global Constants (`UniversalRoot.php`)
-Create `UniversalRoot.php` at your root application level to register baseline storage locations:
-
-```php
-<?php
-global \(avis_datalake_dir,\)avis_ini, \(user_dir,\)user_loc;
-
-\$avis_datalake_dir = [
-    'RRU_AI'        => 'RRU-AI/',
-    'BASE_USER'     => 'USER/',
-    'DATALAKE_DATE' => '/htdocs/MWAD',
-    'AVIS'          => '/avis/',
-];
-
-\$user_dir = (\(avis_ini['DIST'] ?? '../') .\)avis_datalake_dir['RRU_AI'] . \(avis_datalake_dir['BASE_USER'];\)user_loc = \(avis_datalake_dir['DATALAKE_DATE'] .\)avis_datalake_dir['AVIS'];
-```
-
-## Step 2: Implement the Indexing Engine (`directory.php`)
-Deploy the tracking script to map, sort, and paginate active tenant profile storage nodes:
-
-```php
-<?php
-global \$avis_datalake_dir, \(avis_ini,\)user_loc, files, usernames;
-
-// Discover profile trees
-userDirs = glob(rtrim(user_dir, '/') . '/*', GLOB_ONLYDIR);
-if (userDirs === false) userDirs = []; }
-
-// Sort profile paths by newest modification time
-clearstatcache();
-usort(\$userDirs, function(a, b) {
-    return filemtime(b) <=> filemtime(a);
-});
-
-// Process 10 items per page
-\$page        = isset(\(_GET['page']) ? max(1, (int)\)_GET['page']) : 1;
-\(userSlice   = array_slice(\)userDirs, (\(page - 1) * 10, 10);\)recentFiles = [];
-
-foreach (userSlice as dir) {
-    folderName = basename(dir);
-    if (\$folderName === '.' || \(folderName === '..') { continue; }\)innerPath = rtrim(dir, '/') . '/' . ltrim(user_loc, '/') . '*.json';
-    jsonFiles = glob(innerPath);
-    if (empty(\$jsonFiles)) { continue; } // Skip uninitialized tenant nodes safely
-    
-    usort(jsonFiles, function(a, b) return filemtime(b) <=> filemtime(\(a); });\)recentFiles[\(folderName] =\)jsonFiles[0];
-}
-
-// Bind to global references for frontend ingestion
-\(usernames = array_keys(\)recentFiles);
-\(files     = array_values(\)recentFiles);
-
-include_once('public_browser_result.php');
-```
 # 🌐 Browser Interface Navigation & Search Controls
 
 The system surfaces backend assets through two distinct user interfaces, featuring advanced filtering options and consistent pagination controls.
@@ -297,6 +243,7 @@ The system surfaces backend assets through two distinct user interfaces, featuri
   * **Unified Column Selectors:** Drop-down lists are generated dynamically via array map blocks.
   * **Manual Refinement Fields:** Direct entry text blocks let you filter dates using `YYYYMMDD` profiles.
 * **Routing Link Engine:** The details hyperlink formats URL targets using explicit string parameters:
+  
   ```text
   print_view.php?owner={OWNER_ID}&file={FILE_BASENAME}
   ```
@@ -329,29 +276,6 @@ Every asset payload written to disk by the engine must populate these core keys 
 ```
 
 ## 🩺 2. Environment Verification (`diagnostic_uplink.php`)
-Deploy this validation script to test directory permissions, analyze platform readiness, and check file systems:
-
-```php
-<?php
-/* AVIS-DIAGNOSTIC: diagnostic_uplink.php */
-header('Content-Type: text/plain');
-echo "=== AVIS DATALAKE ENGINE DIAGNOSTIC UPLINK STATUS ===\n\n";
-
-include_once("UniversalRoot.php");
-
-echo "Config Validation:\n";
-echo "├─ Engine Core Status: " . (isset(\$avis_ini['SESSION_ON']) ? "ONLINE" : "OFFLINE") . "\n";
-echo "├─ Scan Target Path:  " . (\$user_dir ?? 'ERROR: NOT DEFINED') . "\n";
-echo "└─ Subfolder Route:   " . (\$user_loc ?? 'ERROR: NOT DEFINED') . "\n\n";
-
-echo "Storage Node Discovery:\n";
-if (is_dir(\$user_dir)) {
-    echo "└─ [SUCCESS] Tenant folder space successfully mapped.\n";
-    profiles = glob(user_dir . '*', GLOB_ONLYDIR);
-    echo "   └─ Active Profiles Loaded: " . count(\$profiles) . " users registered.\n";
-} else {
-    echo "└─ [CRITICAL ERROR] Target path not found. Verify your environment directory structure.\n";
-}
 ```
 
 ## 🔌 Router → Switch → Engine Flow
@@ -359,11 +283,6 @@ if (is_dir(\$user_dir)) {
 ```
 Client 🌐 → Ingress Router 🔌 → Tenant Switch 🔀 → AVIS Engine ⚙️ → Browser 🌐 → Review Form 📄 → Egress Router 🚀
 ```
-
-
-
-
-
 ---
 
 ## 📊 Example Metadata Card
@@ -382,20 +301,12 @@ Client 🌐 → Ingress Router 🔌 → Tenant Switch 🔀 → AVIS Engine ⚙�
 }
 ```
 
-
-
-
-
 ---
 
 ## 🚀 Visual Dashboards
 - 📈 **Traffic Heatmaps** → Active tenants.  
 - ⏱️ **Latency Graphs** → Router response times.  
 - 🛡️ **Error Counters** → Failed payloads.  
-
-
-
-
 
 ---
 
@@ -405,9 +316,6 @@ Client 🌐 → Ingress Router 🔌 → Tenant Switch 🔀 → AVIS Engine ⚙�
 - ⚡ Clear cache before sorting directories.  
 - 📂 Normalize filenames for consistent filtering.  
 - 🩺 Run diagnostics regularly.  
-
-
-
 
 
 ---
