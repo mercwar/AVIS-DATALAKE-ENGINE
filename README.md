@@ -300,8 +300,6 @@ Client 🌐 → Ingress Router 🔌 → Tenant Switch 🔀 → AVIS Engine ⚙�
 }
 ```
 
----
-
 ## 🚀 Visual Dashboards
 - 📈 **Traffic Heatmaps** → Active tenants.  
 - ⏱️ **Latency Graphs** → Router response times.  
