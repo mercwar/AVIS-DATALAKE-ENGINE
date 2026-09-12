@@ -282,8 +282,7 @@ Every asset payload written to disk by the engine must populate these core keys 
 
 ```
 Client 🌐 → Ingress Router 🔌 → Tenant Switch 🔀 → AVIS Engine ⚙️ → Browser 🌐 → Review Form 📄 → Egress Router 🚀
-```
----
+
 
 ## 📊 Example Metadata Card
 
